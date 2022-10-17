@@ -13,8 +13,15 @@ h4{
 }
 
 .container-fluid{
+    padding-bottom: 0px !important;
     padding-left: 100px !important; 
     padding-right: 100px !important; 
+}
+
+@media (min-width: 200px) and (max-width: 768px){
+    .container-fluid{
+        padding: 0px 50px !important;
+    }
 }
 
 .h-100vh{
@@ -201,6 +208,14 @@ h4{
     text-align: left;
 }
 
+@media (min-width: 200px) and (max-width: 768px){
+    .about-context {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+}
+
 .about-space{
     margin-top: 1.5rem ;
 }
@@ -208,7 +223,7 @@ h4{
 .text-muted{
     --bs-text-opacity: 1;
     color: #6c757d !important;
-    margin-top: 1.5rem;
+    margin-top: 1.5rem !important;
 }
 
 .mt-3, .mt-4{
@@ -257,6 +272,21 @@ h4{
     border-radius: 0.25rem;
 }
 
+.service-box .service-icon{
+    padding-top: 80px;
+    padding-bottom: 35px;
+}
+
+.service-box .service-icon a i{
+    color: #e65f78;
+    font-size: 80px;
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
+    font-weight: bold !important;
+    transition: all 0.5s;
+}
+
 .service-box .service-title-border{
     height: 2px;
     width: 60px;
@@ -269,6 +299,17 @@ h4{
     padding: 0px 50px 0px 50px  ;
 }
 
+@media (min-width: 200px) and (max-width: 768px){
+    .service-row{
+        padding: 0px 0px !important;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 768px){
+    .contact-row{
+        padding: 0px 0px !important;
+    }
+}
 
 .service-img{
     height: 250px !important;
@@ -323,15 +364,20 @@ h4{
 
 #footer{
     background-color: #212121 !important;
+
 }
 
 .list-unstyled{
     list-style: none !important;
 }
 
+.footer-bg a{
+    text-decoration: noneS;
+}
+
 .footer-bg i{
-    color: white !important;
-    font-size: 20px;
+    color: #ababab !important;
+    font-size: 25px;
     border-radius: 50%;
     height: 44px;
     width: 44px;
@@ -340,13 +386,22 @@ h4{
     line-height: 43px;
     transition: all 0.5s;
     background-color: #f1f1f114;
+    margin: 5px 10px 0px 10px;
 }
 
-.footer-alt{
-    padding: 0px 560px !important;
+.footer-bg i:hover{
+    transition: all 0.5s;
+    color: #000 !important;
+    background-color: #e65f78 ; */
+    /* border: solid #d87184; */
+}
+
+.footer-icon{
+    display: inline-block;
 }
 
 .copyright{
     color: #ababab;
     font-size: 16px;
+    padding: 20px; 
 }

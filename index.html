@@ -29,20 +29,6 @@
 </head>
 
 <body style="overflow: visible;">
-    <script>
-        $(document).ready(function(){
-            $(window).on("scroll",function(){
-                var wn = $(window).scrollTop();
-                if(wn > 120){
-                    $(".navbar").css("background","transparent");
-                }
-                else{
-                    $(".navbar").css("background-color","white");
-                    $(".navbar").css("color","black")
-                }
-            });
-        });
-    </script>
     <nav class="navbar navbar-expand-lg custom-nav navbar-light fixed-top sticky">
         <div class="container-fluid d-flex ">
             <a class="navbar-brand p-2 me-auto flex-grow-1 logo" href="#">
@@ -84,7 +70,7 @@
                         <h4 class="text-white mb-4">Welcome</h4>
                         <h1 class="header-name text-capitalize text-white">
                             I'M
-                            <span class="simple-text-rotate fw-bold" style="">A Web Developer.</span>
+                            <span class="simple-text-rotate fw-bold">A Web Developer.</span>
                         </h1>
                         <p class="text-center header-desc mt-4 mx-auto">Programming is not about typing, It's about thinking! 
                             <span>
@@ -107,7 +93,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
-                    <img class="mx-auto img-fluid  about-img text-center" src="assets/my-photo.jpg" alt="">
+                    <img class="mx-auto img-fluid  about-img text-center" src="assets/my-photo.jpg" alt="">  
                 </div>
                 <div class="col-lg-5 about-context">
                     <div class="mt-3">
@@ -174,9 +160,13 @@
                 <div class="col-lg-4" >
                     <div class="mt-4 text-center service-box p-4">
                         <div class="service-icon text-center">
-                            <img class="service-img" src="assets/website-development.png" alt="">
+                            <!-- <img class="service-img" src="assets/website-development.png" alt=""> -->
+                            <a href="#">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            
                         </div>
-                        <h4 class="fw-bold service-text">Website Development</h4>
+                        <h4 class="fw-bold service-text">Web Development</h4>
                         <div class="service-title-border"></div>
                         <p class="mt-4 text-muted">
                             We provide working and functional websites with beautiful UX designs as per the client requirements. 
@@ -186,9 +176,12 @@
                 <div class="col-lg-4 ">
                     <div class="mt-4 text-center service-box p-4">
                         <div class="service-icon text-center">
-                            <img class="service-img" src="assets/website-maintenance.png" alt="">
+                            <!-- <img class="service-img" src="assets/website-maintenance.png" alt=""> -->
+                            <a href="#">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </a>
                         </div>
-                        <h4 class="fw-bold service-text">Website Maintenence</h4>
+                        <h4 class="fw-bold service-text">Maintenence</h4>
                         <div class="service-title-border"></div>
                         <p class="mt-4 text-muted">
                             We not only develop the websites but also maintain it. 
@@ -198,7 +191,10 @@
                 <div class="col-lg-4 ">
                     <div class="mt-4 text-center service-box p-4">
                         <div class="service-icon text-center">
-                            <img class="service-img" src="assets/marketer.png" alt="">
+                            <!-- <img class="service-img" src="assets/marketer.png" alt=""> -->
+                            <a href="#">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </a>
                         </div>
                         <h4 class="fw-bold service-text">Data Analysis</h4>
                         <div class="service-title-border"></div>
@@ -266,25 +262,39 @@
     </section>
 
     <section id="footer" class="section bg-light">
-        <div class="container-fluid">
-            <div class="row justify-content-center footer-alt">
-                <div class="col-lg-3 footer-bg " >
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <div class="col-lg-3 footer-bg ">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-                <div class="col-lg-3 footer-bg ">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="col-lg-3 footer-bg ">
-                    <i class="fa-brands fa-twitter"></i>
+        <footer class="footer">
+            <div class="row justify-content-center">
+                <div class="container-fluid text-center footer-bg">
+                    <div class="footer-icon">
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>    
                 </div>
             </div>
-            <div class="row align-items-center copyright">
-                <p class="text-muted mt-3 mb-0">2021-2022 © Gauri Shirkande @ DreamBig</p>
+            <div class="row">
+                <div class="copyright">
+                    <p>
+                        2021-2022 © Gauri Shirkande @ DreamBig
+                    </p>
+                </div>
             </div>
-        </div>
+        </footer>
     </section>
 </body>
 
